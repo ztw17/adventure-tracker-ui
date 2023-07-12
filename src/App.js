@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import axios from 'axios';
 import './App.css';
+import LandingPage from './components/LandingPage/LandingPage';
 
 function App() {
   const [data, setData] = useState([]);
@@ -19,11 +21,19 @@ function App() {
   };
 
   return (
-    <div>
-      {data.map((activity => (
-        <div key={activity.id}>{activity.name}</div>
-      )))}
-    </div>
+    // <div>
+    //   {data.map((activity => (
+    //     <div key={activity.id}>{activity.name}</div>
+    //   )))}
+    // </div>
+    // <Switch>
+    //   <Route path='/' render={() => <LandingPage></LandingPage>}></Route>
+    // </Switch>
+    <Router>
+      <Routes>
+      <Route path='/' render={() => <LandingPage></LandingPage>}></Route>
+      </Routes>
+    </Router>
   );
 }
 
