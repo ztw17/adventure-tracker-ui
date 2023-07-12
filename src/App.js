@@ -26,12 +26,9 @@ function App() {
     //     <div key={activity.id}>{activity.name}</div>
     //   )))}
     // </div>
-    // <Switch>
-    //   <Route path='/' render={() => <LandingPage></LandingPage>}></Route>
-    // </Switch>
     <Router>
       <Routes>
-      <Route path='/' render={() => <LandingPage></LandingPage>}></Route>
+        <Route path='/' element={<LandingPage></LandingPage>}></Route>
       </Routes>
     </Router>
   );
