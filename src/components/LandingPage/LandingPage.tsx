@@ -5,7 +5,9 @@ interface LandingPageProps {}
 
 const LandingPage: FC<LandingPageProps> = () => (
  <LandingPageWrapper data-testid="LandingPage">
-    LandingPage Component
+   <div>
+      
+   </div>
  </LandingPageWrapper>
 );
 
