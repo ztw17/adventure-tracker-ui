@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import axios from 'axios';
 import './App.css';
 import LandingPage from './components/LandingPage/LandingPage';
+import NavigationBar from './components/NavigationBar/NavigationBar';
 
 function App() {
   const [data, setData] = useState([]);
@@ -27,6 +28,7 @@ function App() {
     //   )))}
     // </div>
     <Router>
+      <NavigationBar></NavigationBar>
       <Routes>
         <Route path='/' element={<LandingPage></LandingPage>}></Route>
       </Routes>

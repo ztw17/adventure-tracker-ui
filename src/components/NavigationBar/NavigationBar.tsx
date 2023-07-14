@@ -5,7 +5,11 @@ interface NavigationBarProps {}
 
 const NavigationBar: FC<NavigationBarProps> = () => (
  <NavigationBarWrapper data-testid="NavigationBar">
-    NavigationBar Component
+   <div className='logo-placeholder'>Adventure Tracker</div>
+   <div className='buttons-wrapper'>
+      <div className='login-button'>Log in</div>
+      <button>Sign up</button>
+   </div>
  </NavigationBarWrapper>
 );
 
