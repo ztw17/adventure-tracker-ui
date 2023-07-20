@@ -12,6 +12,16 @@ export const NavigationBarWrapper = styled.div`
     justify-content: space-between;
     padding: 0 24px;
 
+    .logo-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        height: 42px;
+        width: 42px;
+    }
+
     .logo-placeholder {
         height: 100%;
         display: flex;
