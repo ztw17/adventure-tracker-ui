@@ -15,6 +15,7 @@ export const NavigationBarWrapper = styled.div`
     .logo-wrapper {
         display: flex;
         align-items: center;
+        cursor: pointer;
     }
 
     .logo {
@@ -22,10 +23,13 @@ export const NavigationBarWrapper = styled.div`
         width: 42px;
     }
 
-    .logo-placeholder {
-        height: 100%;
-        display: flex;
-        align-items: center;
+    .title {
+        font-size: 22px;
+        margin-left: 10px;
+    }
+
+    .font-link {
+        font-family: 'Pacifico', cursive;
     }
 
     .buttons-wrapper {

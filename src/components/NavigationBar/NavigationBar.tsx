@@ -8,7 +8,7 @@ const NavigationBar: FC<NavigationBarProps> = () => (
  <NavigationBarWrapper data-testid="NavigationBar">
     <div className='logo-wrapper'>
       <img src={mainLogo} className='logo'></img>
-      <div className='logo-placeholder'>Adventure Tracker</div>
+      <div className='title font-link'>Adventure Tracker</div>
     </div>
     <div className='buttons-wrapper'>
       <div className='login-button clickable center-buttons'>Log in</div>
