@@ -3,10 +3,10 @@ import { LogInWrapper } from './LogIn.styled';
 
 interface LogInProps {}
 
-const LogIn: FC<LogInProps> = () => (
+const LogInPage: FC<LogInProps> = () => (
  <LogInWrapper data-testid="LogIn">
     LogIn Component
  </LogInWrapper>
 );
 
-export default LogIn;
+export default LogInPage;

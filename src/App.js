@@ -4,6 +4,7 @@ import axios from 'axios';
 import './App.css';
 import LandingPage from './components/LandingPage/LandingPage';
 import NavigationBar from './components/NavigationBar/NavigationBar';
+import LogInPage from './components/LogIn/LogIn';
 
 function App() {
   const [data, setData] = useState([]);
@@ -31,6 +32,7 @@ function App() {
       <NavigationBar></NavigationBar>
       <Routes>
         <Route path='/' element={<LandingPage></LandingPage>}></Route>
+        <Route path='/login' element={<LogInPage></LogInPage>}></Route>
       </Routes>
     </Router>
   );
