@@ -7,16 +7,22 @@ interface NavigationBarProps {}
 
 const NavigationBar: FC<NavigationBarProps> = () => {
   const navigate = useNavigate();
+
+  const handleHomeClick = () => {
+    navigate('/')
+  };
+
   const handleLogInClick = () => {
     navigate('/login')
   };
+  
   const handleSignUpClick = () => {
     navigate('/signup')
   };
 
   return (
   <NavigationBarWrapper data-testid="NavigationBar">
-      <div className='logo-wrapper'>
+      <div onClick={handleHomeClick} className='logo-wrapper'>
         <img src={mainLogo} className='logo'></img>
         <div className='title font-link'>Adventure Tracker</div>
       </div>
