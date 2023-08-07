@@ -9,7 +9,10 @@ const NavigationBar: FC<NavigationBarProps> = () => {
   const navigate = useNavigate();
   const handleLogInClick = () => {
     navigate('/login')
-  }
+  };
+  const handleSignUpClick = () => {
+    navigate('/signup')
+  };
 
   return (
   <NavigationBarWrapper data-testid="NavigationBar">
@@ -19,7 +22,7 @@ const NavigationBar: FC<NavigationBarProps> = () => {
       </div>
       <div className='buttons-wrapper'>
         <div onClick={handleLogInClick} className='login-button clickable center-buttons'>Log in</div>
-        <div className='sign-up-button clickable center-buttons'>Sign up</div>
+        <div onClick={handleSignUpClick} className='sign-up-button clickable center-buttons'>Sign up</div>
       </div>
   </NavigationBarWrapper>
   );

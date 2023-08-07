@@ -5,6 +5,7 @@ import './App.css';
 import LandingPage from './components/LandingPage/LandingPage';
 import NavigationBar from './components/NavigationBar/NavigationBar';
 import LogInPage from './components/LogIn/LogIn';
+import SignUp from './components/SignUp/SignUp';
 
 function App() {
   const [data, setData] = useState([]);
@@ -23,16 +24,12 @@ function App() {
   };
 
   return (
-    // <div>
-    //   {data.map((activity => (
-    //     <div key={activity.id}>{activity.name}</div>
-    //   )))}
-    // </div>
     <Router>
       <NavigationBar></NavigationBar>
       <Routes>
         <Route path='/' element={<LandingPage></LandingPage>}></Route>
         <Route path='/login' element={<LogInPage></LogInPage>}></Route>
+        <Route path='/signup' element={<SignUp></SignUp>}></Route>
       </Routes>
     </Router>
   );
