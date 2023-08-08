@@ -6,11 +6,14 @@ interface SignUpProps {}
 
 const SignUp: FC<SignUpProps> = () => (
  <SignUpWrapper data-testid="SignUp">
-   <div>
-      <TextField label="First name" variant="outlined" />
-      <TextField label="Last name" variant="outlined" />
-      <TextField label="Email address" variant="outlined" />
-      <TextField label="Password" variant="outlined" />
+   <div className="form-wrapper">
+      <div className="form-card">
+         <span className="sign-up-text">Sign up for free!</span>
+         <TextField label="First name" variant="outlined" />
+         <TextField label="Last name" variant="outlined" />
+         <TextField label="Email address" variant="outlined" />
+         <TextField label="Password" variant="outlined" />
+      </div>
    </div>
  </SignUpWrapper>
 );
